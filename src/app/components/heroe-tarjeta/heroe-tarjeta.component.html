@@ -1,0 +1,14 @@
+
+    <div class="card animated fadeIn fast mb-2 shadow-lg card-bg"  >
+        <div class="card-header">
+            <h5 class="card-title ">{{heroe.nombre}}</h5>
+        </div>
+        <img [src]="heroe.img" class="card-img-top img-fluid" alt="... ">
+        <div class="card-body ">
+            <p class="card-text" style=" text-align: justify; ">{{heroe.bio}}</p>
+            <p class=" card-text "><small class="text-muted ">Aparición: {{heroe.aparicion}}</small></p>
+        </div>
+        <div class="card-footer p-2">
+            <button (click)="verHeroe()" class="btn btn-outline-primary w-100">ver mas...</button>
+        </div>
+    </div>

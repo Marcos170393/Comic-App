@@ -1,0 +1,20 @@
+<div class="container-fluid bg-heroe">
+    <div class="row">
+        <div class="col-12 col-md-6">
+           <div class="mb-5">
+            <h1 class="display-1 float-start me-4">{{heroe.nombre | uppercase}}</h1>
+            <img src="../../../assets/img/DC_Comics_logo.png" alt="" *ngIf="mostrarCasa()" style="width: 6rem;">
+            <img src="../../../assets/img/marvel_logo.jpg" alt="" *ngIf="!mostrarCasa()" style="width: 6rem;">   
+           </div>
+          <hr>
+           <p class="mt-5">{{heroe.bio}}</p>
+            <p><small>Su primera aparición fue en <span class="text-decoration-underline">{{heroe.aparicion | date:'y'}}</span></small></p>
+            
+        </div>
+        <div class="col-12 col-md-6 animated fadeIn p-0" >
+            <img [src]="heroe.img" alt="">
+        </div>
+
+    </div>
+    <a class="btn btn-outline-danger" (click)="volver()">Regresar a la galería</a>
+</div>

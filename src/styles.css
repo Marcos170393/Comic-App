@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  padding: 0px;
+  background-image: url(../src/assets/img/bg-home.jpeg);
+  background-size: 100%;
+    
+  }
+
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: rgb(25, 63, 63);
+  border-radius: 2px;
+}
+
+
+.title-home{
+  background-color: rgba(0, 0, 0, 0.713);
+}
+
+.bg-about{
+  background-color: rgba(242, 248, 248, 0.741);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.bg-heroe{
+  background-color: rgba(0, 0, 0, 0.672);
+  border-radius: 10px;
+  padding: 15px;
+  color: white !important;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+ 
